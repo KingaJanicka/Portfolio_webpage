@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'eslint:recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -18,5 +19,10 @@ module.exports = {
     'react',
   ],
   rules: {
+    'react/react-in-jsx-scope': 'off',
   },
+  globals: {
+    React: 'writable',
+  },
+
 };
