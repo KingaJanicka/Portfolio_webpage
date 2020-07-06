@@ -24,9 +24,9 @@ module.exports = {
     "no-process-exit": "off",
     "object-shorthand": "off",
     "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
   },
   globals: {
     React: "writable",
   },
-  "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
 };
