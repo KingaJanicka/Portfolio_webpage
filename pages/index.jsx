@@ -6,16 +6,12 @@ import {
   Divider,
   Grid,
   Header,
-  Icon,
   Image,
   List,
-  Responsive,
   Segment,
-  GridColumn,
 } from "semantic-ui-react";
 
 import { PageContainer } from "../lib/pageContainer";
-
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
 // For more advanced usage please check Responsive docs under the "Usage" section.
@@ -28,7 +24,6 @@ import { PageContainer } from "../lib/pageContainer";
 const HomepageLayout = () => {
   const codeRef = useRef(null);
   const musicRef = useRef(null);
-  console.log(codeRef);
   return (
     <>
       <PageContainer refs={{ "/code": codeRef, "/music": musicRef }}>
@@ -37,28 +32,19 @@ const HomepageLayout = () => {
             <Grid.Row>
               <Grid.Column width={8}>
                 <Header as="h3" style={{ fontSize: "2em" }}>
-                  We Help Companies and Companions
+                  Kinga Janicka
                 </Header>
                 <p style={{ fontSize: "1.33em" }}>
-                  We can give your company superpowers to do things that they
-                  never thought possible. Let us delight your customers and
-                  empower your needs... through pure data analytics.
+                  Junior Frontend Web Developer
                 </p>
-                <Header as="h3" style={{ fontSize: "2em" }}>
-                  We Make Bananas That Can Dance
-                </Header>
+
                 <p style={{ fontSize: "1.33em" }}>
-                  Yes that&quot;s right, you thought it was the stuff of dreams,
-                  but even bananas can be bioengineered.
+                  Hi my name is Kinga, I've been teaching myself how to code for
+                  about a year now.
                 </p>
               </Grid.Column>
               <Grid.Column floated="right" width={6}>
-                <Image
-                  bordered
-                  rounded
-                  size="large"
-                  src="/images/wireframe/white-image.png"
-                />
+                <Image bordered rounded size="large" src="../lib/face.jpg" />
               </Grid.Column>
             </Grid.Row>
             <Grid.Row>
@@ -83,31 +69,64 @@ const HomepageLayout = () => {
                 </Divider>
                 <Segment basic>
                   <Header as="h3" style={{ fontSize: "2em" }}>
-                    Breaking The Grid, Grabs Your Attention
+                    Chonky.Cat
                   </Header>
                   <p style={{ fontSize: "1.33em" }}>
-                    Instead of focusing on content creation and hard work, we
-                    have learned how to master the art of doing nothing by
-                    providing massive amounts of whitespace and generic content
-                    that can seem massive, monolithic and worth your attention.
+                    A near infinite source of cat pictures. Takes pictures from
+                    reddit and aggregates them for a cleaner, distraction free
+                    experience.
                   </p>
-                  <Button as="a" size="large">
-                    Read More
+                  <Button
+                    as="a"
+                    size="large"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/KingaJanicka/chonky.cat",
+                        "_blank"
+                      )}
+                  >
+                    Github
+                  </Button>
+                  <Button
+                    as="a"
+                    size="large"
+                    onClick={() => window.open("https://chonky.cat", "_blank")}
+                  >
+                    Visit
                   </Button>
                 </Segment>
                 <Segment basic>
                   <Header as="h3" style={{ fontSize: "2em" }}>
-                    Breaking The Grid, Grabs Your Attention
+                    Snake game
                   </Header>
                   <p style={{ fontSize: "1.33em" }}>
-                    Instead of focusing on content creation and hard work, we
-                    have learned how to master the art of doing nothing by
-                    providing massive amounts of whitespace and generic content
-                    that can seem massive, monolithic and worth your attention.
+                    A basic Snake game written in C++. Failure states are biting
+                    your own tail and running into a wall. Features a eating
+                    mechaninc where after eating fruit, your snake will get
+                    longer only when it passes through all of the snake's body.
                   </p>
-                  <Button as="a" size="large">
-                    Read More
+                  <Button
+                    as="a"
+                    size="large"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/KingaJanicka/Snake",
+                        "_blank"
+                      )}
+                  >
+                    Github
                   </Button>
+                </Segment>
+                <Segment basic>
+                  <Header as="h3" style={{ fontSize: "2em" }}>
+                    Bouncer Bot
+                  </Header>
+                  <p style={{ fontSize: "1.33em" }}>
+                    Currently in progress. A Zoom bot that notifies room host
+                    when a person not from invite list is in the meeting. The
+                    invite list is a Google Sheets document. Intended to improve
+                    security and safety of Zoom events.
+                  </p>
                 </Segment>
               </Grid.Column>
 
@@ -122,30 +141,26 @@ const HomepageLayout = () => {
                 </Divider>
                 <Segment basic>
                   <Header as="h3" style={{ fontSize: "2em" }}>
-                    Breaking The Grid, Grabs Your Attention
+                    DIY Serge Modular
                   </Header>
                   <p style={{ fontSize: "1.33em" }}>
-                    Instead of focusing on content creation and hard work, we
-                    have learned how to master the art of doing nothing by
-                    providing massive amounts of whitespace and generic content
-                    that can seem massive, monolithic and worth your attention.
+                    Collaborating with my brother. DIY version of a Serge
+                    Modular synthesizer using Elby PCBs, custom panels inspired
+                    by old Paperface Serge and Make Noise Black and Gold Shared
+                    System. To be sequenced and processed with Ableton with the
+                    help of Expert Sleepers ES-9 Audio Interface. Built with
+                    performing live in mind.
                   </p>
-                  <Button as="a" size="large">
-                    Read More
-                  </Button>
-                </Segment>
-                <Segment basic>
-                  <Header as="h3" style={{ fontSize: "2em" }}>
-                    Breaking The Grid, Grabs Your Attention
-                  </Header>
-                  <p style={{ fontSize: "1.33em" }}>
-                    Instead of focusing on content creation and hard work, we
-                    have learned how to master the art of doing nothing by
-                    providing massive amounts of whitespace and generic content
-                    that can seem massive, monolithic and worth your attention.
-                  </p>
-                  <Button as="a" size="large">
-                    Read More
+                  <Button
+                    as="a"
+                    size="large"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/KingaJanicka/DIY-Serge",
+                        "_blank"
+                      )}
+                  >
+                    Github
                   </Button>
                 </Segment>
               </Grid.Column>

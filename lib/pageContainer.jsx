@@ -46,7 +46,7 @@ const DesktopContainer = ({ children, refs }) => {
         <Segment
           inverted
           textAlign="center"
-          style={{ minHeight: 700, padding: "1em 0em" }}
+          style={{ minHeight: 70, padding: "1em 0em" }}
           vertical
         >
           <Menu
@@ -68,22 +68,9 @@ const DesktopContainer = ({ children, refs }) => {
                   {label}
                 </Menu.Item>
               ))}
-              <Menu.Item position="right">
-                {/* <Button as="a" inverted={!fixed}>
-                  Log in
-                </Button>
-                <Button
-                  as="a"
-                  inverted={!fixed}
-                  primary={fixed}
-                  style={{ marginLeft: "0.5em" }}
-                >
-                  Sign Up
-                </Button> */}
-              </Menu.Item>
             </Container>
           </Menu>
-          <HomepageHeading />
+          {/* <HomepageHeading /> */}
         </Segment>
       </Visibility>
 
@@ -119,23 +106,26 @@ const MobileContainer = ({ children, refs }) => {
         vertical
         visible={sidebarOpened}
       >
-        {MENU_ITEMS.map(({ to, label }) => (
-          <Menu.Item
-            as="a"
-            onClick={() => {
-              refs[to].current.scrollIntoView();
-            }}
-          >
-            {label}
-          </Menu.Item>
-        ))}
+        <Container className="testing12345678987654323456789">
+          {MENU_ITEMS.map(({ to, label }) => (
+            <Menu.Item
+              as="a"
+              onClick={() => {
+                if (to === "/") window.scrollTo(0, 0);
+                else refs[to].current.scrollIntoView();
+              }}
+            >
+              {label}
+            </Menu.Item>
+          ))}
+        </Container>
       </Sidebar>
 
       <Sidebar.Pusher dimmed={sidebarOpened}>
         <Segment
           inverted
           textAlign="center"
-          style={{ minHeight: 350, padding: "1em 0em" }}
+          style={{ minHeight: 35, padding: "1em 0em" }}
           vertical
         >
           <Container>
@@ -143,17 +133,10 @@ const MobileContainer = ({ children, refs }) => {
               <Menu.Item onClick={handleToggle}>
                 <Icon name="sidebar" />
               </Menu.Item>
-              <Menu.Item position="right">
-                <Button as="a" inverted>
-                  Log in
-                </Button>
-                <Button as="a" inverted style={{ marginLeft: "0.5em" }}>
-                  Sign Up
-                </Button>
-              </Menu.Item>
+              <Menu.Item position="right" />
             </Menu>
           </Container>
-          <HomepageHeading mobile />
+          {/* <HomepageHeading mobile /> */}
         </Segment>
 
         {children}

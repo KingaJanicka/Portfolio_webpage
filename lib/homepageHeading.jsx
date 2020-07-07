@@ -5,7 +5,7 @@ export const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as="h1"
-      content="Imagine-a-Company"
+      content="Kinga Janicka"
       inverted
       style={{
         fontSize: mobile ? "2em" : "4em",
@@ -16,7 +16,7 @@ export const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as="h2"
-      content="Do whatever you want when you want to."
+      content="Junior Front-end Web Developer"
       inverted
       style={{
         fontSize: mobile ? "1.5em" : "1.7em",
