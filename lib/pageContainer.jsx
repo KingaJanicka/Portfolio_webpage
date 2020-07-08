@@ -18,9 +18,9 @@ import { HomepageHeading } from "./homepageHeading";
  * It can be more complicated, but you can create really flexible markup.
  */
 const MENU_ITEMS = [
-  { to: "/", label: "Home" },
-  { to: "/code", label: "Code" },
-  { to: "/music", label: "Music" },
+  { to: "#top", label: "Home" },
+  { to: "#code", label: "Code" },
+  { to: "#music", label: "Music" },
 ];
 const getWidth = () => {
   const isSSR = typeof window === "undefined";
@@ -37,7 +37,7 @@ const DesktopContainer = ({ children, refs }) => {
   const { fixed } = state;
 
   return (
-    <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
+    <div>
       <Visibility
         once={false}
         onBottomPassed={showFixedMenu}
@@ -58,7 +58,7 @@ const DesktopContainer = ({ children, refs }) => {
           >
             <Container>
               {MENU_ITEMS.map(({ to, label }) => (
-                <Menu.Item as="a" href="#projects">
+                <Menu.Item as="a" href={`${to}`}>
                   {label}
                 </Menu.Item>
               ))}
@@ -69,7 +69,7 @@ const DesktopContainer = ({ children, refs }) => {
       </Visibility>
 
       {children}
-    </Responsive>
+    </div>
   );
 };
 
