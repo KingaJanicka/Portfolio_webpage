@@ -22,13 +22,8 @@ const MENU_ITEMS = [
   { to: "#code", label: "Code" },
   { to: "#music", label: "Music" },
 ];
-const getWidth = () => {
-  const isSSR = typeof window === "undefined";
 
-  return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth;
-};
-
-const DesktopContainer = ({ children, refs }) => {
+const DesktopContainer = ({ children }) => {
   const [state, setState] = useState({});
 
   const hideFixedMenu = () => setState({ fixed: false });
@@ -77,70 +72,9 @@ DesktopContainer.propTypes = {
   children: PropTypes.node,
 };
 
-const MobileContainer = ({ children }) => {
-  const [state, setState] = useState({});
-
-  const handleSidebarHide = () => setState({ sidebarOpened: false });
-
-  const handleToggle = () => setState({ sidebarOpened: true });
-
-  const { sidebarOpened } = state;
-
-  return (
-    <Responsive
-      as={Sidebar.Pushable}
-      getWidth={getWidth}
-      maxWidth={Responsive.onlyMobile.maxWidth}
-    >
-      <Sidebar
-        as={Menu}
-        animation="push"
-        inverted
-        onHide={handleSidebarHide}
-        vertical
-        visible={sidebarOpened}
-      >
-        <Container className="testing12345678987654323456789">
-          {MENU_ITEMS.map(({ to, label }) => (
-            <Menu.Item as="a" href="#projects">
-              {label}
-            </Menu.Item>
-          ))}
-        </Container>
-      </Sidebar>
-
-      <Sidebar.Pusher dimmed={sidebarOpened}>
-        <Segment
-          inverted
-          textAlign="center"
-          style={{ minHeight: 35, padding: "1em 0em" }}
-          vertical
-        >
-          <Container>
-            <Menu inverted pointing secondary size="large">
-              <Menu.Item onClick={handleToggle}>
-                <Icon name="sidebar" />
-              </Menu.Item>
-              <Menu.Item position="right" />
-            </Menu>
-          </Container>
-          {/* <HomepageHeading mobile /> */}
-        </Segment>
-
-        {children}
-      </Sidebar.Pusher>
-    </Responsive>
-  );
-};
-
-MobileContainer.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
 export const PageContainer = ({ children }) => (
   <div>
     <DesktopContainer>{children}</DesktopContainer>
-    <MobileContainer>{children}</MobileContainer>
   </div>
 );
 
