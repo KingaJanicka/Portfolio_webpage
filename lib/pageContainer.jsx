@@ -58,13 +58,7 @@ const DesktopContainer = ({ children, refs }) => {
           >
             <Container>
               {MENU_ITEMS.map(({ to, label }) => (
-                <Menu.Item
-                  as="a"
-                  onClick={() => {
-                    if (to === "/") window.scrollTo(0, 0);
-                    else refs[to].current.scrollIntoView();
-                  }}
-                >
+                <Menu.Item as="a" href="#projects">
                   {label}
                 </Menu.Item>
               ))}
@@ -83,7 +77,7 @@ DesktopContainer.propTypes = {
   children: PropTypes.node,
 };
 
-const MobileContainer = ({ children, refs }) => {
+const MobileContainer = ({ children }) => {
   const [state, setState] = useState({});
 
   const handleSidebarHide = () => setState({ sidebarOpened: false });
@@ -108,13 +102,7 @@ const MobileContainer = ({ children, refs }) => {
       >
         <Container className="testing12345678987654323456789">
           {MENU_ITEMS.map(({ to, label }) => (
-            <Menu.Item
-              as="a"
-              onClick={() => {
-                if (to === "/") window.scrollTo(0, 0);
-                else refs[to].current.scrollIntoView();
-              }}
-            >
+            <Menu.Item as="a" href="#projects">
               {label}
             </Menu.Item>
           ))}
@@ -149,10 +137,10 @@ MobileContainer.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export const PageContainer = ({ children, refs }) => (
+export const PageContainer = ({ children }) => (
   <div>
-    <DesktopContainer refs={refs}>{children}</DesktopContainer>
-    <MobileContainer refs={refs}>{children}</MobileContainer>
+    <DesktopContainer>{children}</DesktopContainer>
+    <MobileContainer>{children}</MobileContainer>
   </div>
 );
 

@@ -22,11 +22,9 @@ import { PageContainer } from "../lib/pageContainer";
  */
 
 const HomepageLayout = () => {
-  const codeRef = useRef(null);
-  const musicRef = useRef(null);
   return (
     <>
-      <PageContainer refs={{ "/code": codeRef, "/music": musicRef }}>
+      <PageContainer>
         <Segment style={{ padding: "8em 0em" }} vertical>
           <Grid container stackable verticalAlign="middle">
             <Grid.Row>
@@ -55,7 +53,12 @@ const HomepageLayout = () => {
           </Grid>
         </Segment>
 
-        <Segment style={{ padding: "0em" }} vertical textAlign="center">
+        <Segment
+          id="projects"
+          style={{ padding: "0em" }}
+          vertical
+          textAlign="center"
+        >
           <Grid>
             <Grid.Row>
               <Grid.Column width={8}>
@@ -65,7 +68,7 @@ const HomepageLayout = () => {
                   horizontal
                   style={{ margin: "3em 0em", textTransform: "uppercase" }}
                 >
-                  <span ref={codeRef}>Code Projects</span>
+                  Code Projects
                 </Divider>
                 <Segment basic>
                   <Header as="h3" style={{ fontSize: "2em" }}>
@@ -137,7 +140,7 @@ const HomepageLayout = () => {
                   horizontal
                   style={{ margin: "3em 0em", textTransform: "uppercase" }}
                 >
-                  <span ref={musicRef}>Music Projects</span>
+                  Music Projects
                 </Divider>
                 <Segment basic>
                   <Header as="h3" style={{ fontSize: "2em" }}>
