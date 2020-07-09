@@ -36,16 +36,23 @@ const HomepageLayout = () => {
                 <Header as="h3" style={{ fontSize: "2em" }}>
                   Kinga Janicka
                 </Header>
-                <p style={{ fontSize: "1.33em" }}>
-                  Junior Frontend Web Developer
-                </p>
+                <p style={{ fontSize: "1.33em" }}>Fullstack Web Developer</p>
 
                 <p style={{ fontSize: "1.33em" }}>
-                  Hi my name is Kinga, I've been teaching myself how to code for
-                  about a year now.
+                  Hi my name is Kinga, I live in central London.
+                </p>
+                <p style={{ fontSize: "1.33em" }}>
+                  {" "}
+                  I've been been teaching myself how to write HTML, CSS and
+                  JavaScript for about a year now.
+                </p>
+                <p style={{ fontSize: "1.45em" }}>
+                  I specialize in React, JAMstack and NextJS.
                 </p>
 
-                <Button size="huge">Check Them Out</Button>
+                <Button size="huge" as="a" href="#projects">
+                  My projects
+                </Button>
               </div>
               <div className={styles.column}>
                 {/* Grid Column */}
@@ -56,7 +63,7 @@ const HomepageLayout = () => {
         </Segment>
 
         <Segment style={{ padding: "0em" }} vertical textAlign="center">
-          <div>
+          <div id="projects">
             {/* grid */}
             <div className={styles.row}>
               {/* grid row */}
@@ -184,30 +191,34 @@ const HomepageLayout = () => {
                   {/* grid column */}
                   <Header inverted as="h4" content="About" />
                   <List link inverted>
-                    <List.Item as="a">Sitemap</List.Item>
-                    <List.Item as="a">Contact Us</List.Item>
-                    <List.Item as="a">Religious Ceremonies</List.Item>
-                    <List.Item as="a">Gazebo Plans</List.Item>
+                    <List.Item as="a">Github</List.Item>
+                    <List.Item as="a">Chonky.Cat</List.Item>
+                    <List.Item
+                      as="a"
+                      href="mailto:kingajanicka7+github@gmail.com"
+                    >
+                      Contact
+                    </List.Item>
                   </List>
                 </div>
                 <div className={styles.column}>
                   {/* grid column */}
-                  <Header inverted as="h4" content="Services" />
+                  {/* <Header inverted as="h4" content="Services" />
                   <List link inverted>
                     <List.Item as="a">Banana Pre-Order</List.Item>
                     <List.Item as="a">DNA FAQ</List.Item>
                     <List.Item as="a">How To Access</List.Item>
                     <List.Item as="a">Favorite X-Men</List.Item>
-                  </List>
+                  </List> */}
                 </div>
                 <div className={styles.column}>
                   {/* grid column */}
                   <Header as="h4" inverted>
-                    Footer Header
+                    <a href="https://github.com/KingaJanicka/">@KingaJanicka</a>
                   </Header>
                   <p>
-                    Extra space for a call to action inside the footer that
-                    could help re-engage users.
+                    &copy; {new Date().getFullYear()}
+                    {"  "} Kinga Janicka. All rights reserved.
                   </p>
                 </div>
               </div>
