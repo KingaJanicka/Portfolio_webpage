@@ -19,7 +19,19 @@ function ContactForm() {
   }, []);
   if (state.succeeded) {
     return (
-      <p>Thanks for the message, I'll get back to you as soon as possible.</p>
+      <Modal
+        trigger={<Button>Contact</Button>}
+        basic
+        size="small"
+        defaultOpen="true"
+      >
+        <Header icon="mail" content="Message Sent" />
+        <Modal.Content>
+          <p>
+            Thanks for the message, I'll get back to you as soon as possible.
+          </p>
+        </Modal.Content>
+      </Modal>
     );
   }
   // const verifyCallback = (recaptchaToken) => {
@@ -31,6 +43,7 @@ function ContactForm() {
   //   // you will get a new token in verifyCallback
   //   this.recaptcha.execute();
   // };
+  console.log(state);
   return (
     <Modal trigger={<Button>Contact</Button>} basic size="small">
       <Header icon="mail" content="Message Me" />
