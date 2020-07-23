@@ -41,6 +41,7 @@ function ContactForm() {
               setCaptchaSuccess(true);
             }}
           />
+
           <br />
           {captchaSuccess && (
             <Button type="submit" disabled={state.submitting}>
