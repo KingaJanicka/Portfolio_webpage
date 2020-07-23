@@ -1,7 +1,12 @@
 import "semantic-ui-css/semantic.min.css";
+import { StaticKitProvider } from "@statickit/react";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <StaticKitProvider site="39a836dc9c7f">
+      <Component {...pageProps} />
+    </StaticKitProvider>
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for

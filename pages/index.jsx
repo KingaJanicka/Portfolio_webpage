@@ -4,15 +4,16 @@ import {
   Button,
   Container,
   Divider,
-  Grid,
   Header,
   Image,
   List,
   Segment,
+  Modal,
 } from "semantic-ui-react";
 
 import styles from "../lib/styles.module.css";
 import { PageContainer } from "../lib/pageContainer";
+import ContactForm from "./contact";
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
 // For more advanced usage please check Responsive docs under the "Usage" section.
@@ -94,7 +95,8 @@ const HomepageLayout = () => {
                       window.open(
                         "https://github.com/KingaJanicka/chonky.cat",
                         "_blank"
-                      )}
+                      )
+                    }
                   >
                     Github
                   </Button>
@@ -123,7 +125,8 @@ const HomepageLayout = () => {
                       window.open(
                         "https://github.com/KingaJanicka/Snake",
                         "_blank"
-                      )}
+                      )
+                    }
                   >
                     Github
                   </Button>
@@ -171,7 +174,8 @@ const HomepageLayout = () => {
                       window.open(
                         "https://github.com/KingaJanicka/DIY-Serge",
                         "_blank"
-                      )}
+                      )
+                    }
                   >
                     Github
                   </Button>
@@ -193,23 +197,17 @@ const HomepageLayout = () => {
                   <List link inverted>
                     <List.Item as="a">Github</List.Item>
                     <List.Item as="a">Chonky.Cat</List.Item>
-                    <List.Item
-                      as="a"
-                      href="mailto:kingajanicka7+github@gmail.com"
-                    >
-                      Contact
-                    </List.Item>
                   </List>
                 </div>
                 <div className={styles.column}>
                   {/* grid column */}
-                  {/* <Header inverted as="h4" content="Services" />
+                  {/* <Header inverted as="h4" content="Services" /> */}
                   <List link inverted>
-                    <List.Item as="a">Banana Pre-Order</List.Item>
-                    <List.Item as="a">DNA FAQ</List.Item>
-                    <List.Item as="a">How To Access</List.Item>
-                    <List.Item as="a">Favorite X-Men</List.Item>
-                  </List> */}
+                    <List.Item as="a">
+                      {" "}
+                      <ContactForm />
+                    </List.Item>
+                  </List>
                 </div>
                 <div className={styles.column}>
                   {/* grid column */}
