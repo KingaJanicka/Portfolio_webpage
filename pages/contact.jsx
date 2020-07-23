@@ -1,17 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@statickit/react";
 import { Modal, Label, Header, Form, Input, Button } from "semantic-ui-react";
-import ReCAPTCHA from "react-google-recaptcha";
+import { ReCaptcha, loadReCaptcha } from "react-recaptcha-v3";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("contactForm");
   const [captchaSuccess, setCaptchaSuccess] = useState(false);
+  const [recaptchaReady, setRecaptchaReady] = useState(false);
+  const reCaptchaRef = useRef(null);
+  useEffect(() => {
+    try {
+      loadReCaptcha(process.env.NEXT_PUBLIC_WEBSITE_KEY, () =>
+        setRecaptchaReady(true)
+      );
+    } catch (e) {
+      console.error(e);
+    }
+  }, []);
   if (state.succeeded) {
     return (
       <p>Thanks for the message, I'll get back to you as soon as possible.</p>
     );
   }
+  // const verifyCallback = (recaptchaToken) => {
+  //   // Here you will get the final recaptchaToken!!!
+  //   console.log(recaptchaToken, "<= your recaptcha token");
+  // };
 
+  // const updateToken = () => {
+  //   // you will get a new token in verifyCallback
+  //   this.recaptcha.execute();
+  // };
   return (
     <Modal trigger={<Button>Contact</Button>} basic size="small">
       <Header icon="mail" content="Message Me" />
@@ -26,18 +45,20 @@ function ContactForm() {
           <br />
           <label> Message</label>
           <br />
-          <Form>
-            <textarea id="message" name="message" />
-          </Form>
+
+          <textarea id="message" name="message" />
+
           <ValidationError
             prefix="Message"
             field="message"
             errors={state.errors}
           />
           <br />
-          <ReCAPTCHA
+          <ReCaptcha
+            ref={reCaptchaRef}
             sitekey={process.env.NEXT_PUBLIC_WEBSITE_KEY}
-            onChange={() => {
+            action="sendEmail"
+            verifyCallback={() => {
               setCaptchaSuccess(true);
             }}
           />
