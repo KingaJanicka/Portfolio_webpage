@@ -30,11 +30,11 @@ const HomepageLayout = () => {
 
   return (
     <>
-      <PageContainer
-        id="top"
-        pageRefs={{ home: homeRef, code: codeRef, music: musicRef }}
-      >
-        <div ref={homeRef}>
+      <div ref={homeRef}>
+        <PageContainer
+          id="top"
+          pageRefs={{ home: homeRef, code: codeRef, music: musicRef }}
+        >
           <Segment style={{ padding: "8em 0em" }} vertical>
             <div>
               {/* Grid Container */}
@@ -235,8 +235,8 @@ const HomepageLayout = () => {
               </div>
             </Container>
           </Segment>
-        </div>
-      </PageContainer>
+        </PageContainer>
+      </div>
     </>
   );
 };
