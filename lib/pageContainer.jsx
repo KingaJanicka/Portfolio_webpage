@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   Container,
   Menu,
@@ -17,20 +17,14 @@ import { HomepageHeading } from "./homepageHeading";
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
  * It can be more complicated, but you can create really flexible markup.
  */
-const MENU_ITEMS = [
-  { to: "#top", label: "Home" },
-  { to: "#code", label: "Code" },
-  { to: "#music", label: "Music" },
-];
 
-const DesktopContainer = ({ children }) => {
+const DesktopContainer = ({ pageRefs, children }) => {
   const [state, setState] = useState({});
 
   const hideFixedMenu = () => setState({ fixed: false });
   const showFixedMenu = () => setState({ fixed: true });
 
   const { fixed } = state;
-
   return (
     <div>
       <Visibility
@@ -52,11 +46,33 @@ const DesktopContainer = ({ children }) => {
             size="large"
           >
             <Container>
-              {MENU_ITEMS.map(({ to, label }) => (
-                <Menu.Item as="a" href={`${to}`}>
-                  {label}
-                </Menu.Item>
-              ))}
+              <Menu.Item
+                onClick={() => {
+                  pageRefs.home.current.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                Home
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => {
+                  pageRefs.code.current.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                Code
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => {
+                  pageRefs.music.current.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                Music
+              </Menu.Item>
             </Container>
           </Menu>
           {/* <HomepageHeading /> */}
@@ -70,14 +86,16 @@ const DesktopContainer = ({ children }) => {
 
 DesktopContainer.propTypes = {
   children: PropTypes.node,
+  pageRefs: PropTypes.node,
 };
 
-export const PageContainer = ({ children }) => (
+export const PageContainer = ({ children, pageRefs }) => (
   <div>
-    <DesktopContainer>{children}</DesktopContainer>
+    <DesktopContainer pageRefs={pageRefs}>{children}</DesktopContainer>
   </div>
 );
 
 PageContainer.propTypes = {
   children: PropTypes.node.isRequired,
+  pageRefs: PropTypes.node.isRequired,
 };
