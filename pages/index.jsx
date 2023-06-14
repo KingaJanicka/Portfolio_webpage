@@ -88,6 +88,45 @@ const HomepageLayout = () => {
                   </Divider>
                   <Segment basic>
                     <Header as="h3" style={{ fontSize: "2em" }}>
+                      Inclusive Internet Index
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <Button as="a" size="large" href="/internetIndex">
+                      More
+                    </Button>
+                    <Header as="h3" style={{ fontSize: "2em" }}>
+                      FC Bayern Pulse
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+
+                    <Button as="a" size="large" href="/internetIndex">
+                      More
+                    </Button>
+                    <Header as="h3" style={{ fontSize: "2em" }}>
+                      Exporters Edge/UKEF
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <Button as="a" size="large" href="/internetIndex">
+                      More
+                    </Button>
+
+                    <Header as="h3" style={{ fontSize: "2em" }}>
                       Chonky.Cat
                     </Header>
                     <p style={{ fontSize: "1.33em" }}>
@@ -144,6 +183,18 @@ const HomepageLayout = () => {
                     >
                       Github
                     </Button>
+                  </Segment>
+                  <Segment basic>
+                    <Header as="h3" style={{ fontSize: "2em" }}>
+                      Human Threads
+                    </Header>
+                    <p style={{ fontSize: "1.33em" }}>
+                      A website for a Ceredigion Museum exhibition that happened
+                      during covid. The project was meant to tie together the
+                      now isolating community. It featured short films,
+                      photographs, poetry and art by dozens of members from the
+                      region.
+                    </p>
                   </Segment>
                 </div>
 
