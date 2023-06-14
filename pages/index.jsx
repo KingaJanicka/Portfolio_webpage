@@ -145,17 +145,6 @@ const HomepageLayout = () => {
                       Github
                     </Button>
                   </Segment>
-                  <Segment basic>
-                    <Header as="h3" style={{ fontSize: "2em" }}>
-                      Bouncer Bot
-                    </Header>
-                    <p style={{ fontSize: "1.33em" }}>
-                      Currently in progress. A Zoom bot that notifies room host
-                      when a person not from invite list is in the meeting. The
-                      invite list is a Google Sheets document. Intended to
-                      improve security and safety of Zoom events.
-                    </p>
-                  </Segment>
                 </div>
 
                 <div ref={musicRef} className={styles.column}>
