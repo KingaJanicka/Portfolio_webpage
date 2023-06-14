@@ -35,16 +35,10 @@ const DesktopContainer = ({ pageRefs, children }) => {
         <Segment
           inverted
           textAlign="center"
-          style={{ minHeight: 70, padding: "1em 0em" }}
+          style={{ padding: "1em 0em" }}
           vertical
         >
-          <Menu
-            fixed={fixed ? "top" : null}
-            inverted={!fixed}
-            pointing={!fixed}
-            secondary={!fixed}
-            size="large"
-          >
+          <Menu fixed="top" inverted size="large">
             <Container>
               <Menu.Item
                 onClick={() => {
