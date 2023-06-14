@@ -40,7 +40,7 @@ const HomepageLayout = () => {
               {/* Grid Container */}
               <div className={styles.row}>
                 {/* Grid Row */}
-                <div className={styles.column}>
+                <div className={styles.column} style={{ margin: "0 4em" }}>
                   {/* Grid Column */}
                   <Header as="h3" style={{ fontSize: "2em" }}>
                     Kinga Janicka
@@ -52,8 +52,7 @@ const HomepageLayout = () => {
                   </p>
                   <p style={{ fontSize: "1.33em" }}>
                     {" "}
-                    I've been been teaching myself how to write HTML, CSS and
-                    JavaScript for about a year now.
+                    I'm a mid level web developer
                   </p>
                   <p style={{ fontSize: "1.45em" }}>
                     I specialize in React, JAMstack and NextJS.
@@ -96,6 +95,10 @@ const HomepageLayout = () => {
                       from reddit and aggregates them for a cleaner, distraction
                       free experience.
                     </p>
+                    <p>
+                      This project might stop working when Reddit updates the
+                      API terms on 1st of July
+                    </p>
                     <Button
                       as="a"
                       size="large"
@@ -112,7 +115,8 @@ const HomepageLayout = () => {
                       as="a"
                       size="large"
                       onClick={() =>
-                        window.open("https://chonky.cat", "_blank")}
+                        window.open("https://chonky.cat", "_blank")
+                      }
                     >
                       Visit
                     </Button>
@@ -167,27 +171,26 @@ const HomepageLayout = () => {
                   </Divider>
                   <Segment basic>
                     <Header as="h3" style={{ fontSize: "2em" }}>
-                      DIY Serge Modular
+                      Unnamed EP
                     </Header>
                     <p style={{ fontSize: "1.33em" }}>
-                      Collaborating with my brother. DIY version of a Serge
-                      Modular synthesizer using Elby PCBs, custom panels
-                      inspired by old Paperface Serge and Make Noise Black and
-                      Gold Shared System. To be sequenced and processed with
-                      Ableton with the help of Expert Sleepers ES-9 Audio
-                      Interface. Built with performing live in mind.
+                      A yet unnamed EP featuring a mix of Hard Techno, NRG and
+                      Industrial. Recorded with Elektron Analog Rytm and a
+                      Eurorack modular setup.
+                      <br />
+                      Tennative release date Q3 2023
                     </p>
                     <Button
                       as="a"
                       size="large"
                       onClick={() =>
                         window.open(
-                          "https://github.com/KingaJanicka/DIY-Serge",
+                          "https://www.instagram.com/kingajanickaofficial/",
                           "_blank"
                         )
                       }
                     >
-                      Github
+                      Instagram
                     </Button>
                   </Segment>
                 </div>

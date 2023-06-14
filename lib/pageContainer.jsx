@@ -2,16 +2,12 @@ import { useState, useRef } from "react";
 import {
   Container,
   Menu,
-  Sidebar,
   Visibility,
-  Responsive,
   Segment,
   Button,
   Icon,
 } from "semantic-ui-react";
-import Link from "next/link";
 import PropTypes from "prop-types";
-import { HomepageHeading } from "./homepageHeading";
 
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
@@ -32,14 +28,9 @@ const DesktopContainer = ({ pageRefs, children }) => {
         onBottomPassed={showFixedMenu}
         onBottomPassedReverse={hideFixedMenu}
       >
-        <Segment
-          inverted
-          textAlign="center"
-          style={{ padding: "1em 0em" }}
-          vertical
-        >
+        <Segment inverted textAlign="center" vertical>
           <Menu fixed="top" inverted size="large">
-            <Container>
+            <Container style={{ padding: "0em 2.8em", width: "inherit" }}>
               <Menu.Item
                 onClick={() => {
                   pageRefs.home.current.scrollIntoView({
