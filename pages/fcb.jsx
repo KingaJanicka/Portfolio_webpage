@@ -1,7 +1,7 @@
 import { Divider } from "semantic-ui-react";
 import { PageContainer } from "../lib/pageContainer";
 
-export default function Human() {
+export default function Fcb() {
   return (
     <PageContainer link>
       <div style={{ padding: "2em" }}>

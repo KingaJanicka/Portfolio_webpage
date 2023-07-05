@@ -3,7 +3,7 @@ import { PageContainer } from "../lib/pageContainer";
 
 export default function InternetIndex() {
   return (
-    <PageContainer>
+    <PageContainer link>
       <div style={{ padding: "2em" }}>
         <Divider
           as="h3"

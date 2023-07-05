@@ -86,7 +86,7 @@ const HomepageLayout = () => {
                   >
                     Code Projects
                   </Divider>
-                  <Segment basic>
+                  <Segment basic id="code">
                     <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Human Threads
                     </Header>
@@ -125,9 +125,6 @@ const HomepageLayout = () => {
                       aliqua.
                     </p>
 
-                    <Button as="a" size="large" href="/internetIndex">
-                      More
-                    </Button>
                     <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Exporters Edge/UKEF
                     </Header>
@@ -138,7 +135,7 @@ const HomepageLayout = () => {
                       ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
 
-                    <Button as="a" size="large" href="/internetIndex">
+                    <Button as="a" size="large" href="/ukef">
                       More
                     </Button>
 
@@ -210,7 +207,7 @@ const HomepageLayout = () => {
                   >
                     Music Projects
                   </Divider>
-                  <Segment basic>
+                  <Segment basic id="music">
                     <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Unnamed EP
                     </Header>
