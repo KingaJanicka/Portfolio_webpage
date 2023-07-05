@@ -87,10 +87,26 @@ const HomepageLayout = () => {
                     Code Projects
                   </Divider>
                   <Segment basic>
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header as="h3" style={{ fontSize: "1.5em" }}>
+                      Human Threads
+                    </Header>
+                    <p style={{ fontSize: "1em" }}>
+                      A website for a Ceredigion Museum exhibition that happened
+                      during covid. The project was meant to tie together the
+                      now isolating community. It featured short films,
+                      photographs, poetry and art by dozens of members from the
+                      region.
+                    </p>
+
+                    <Button as="a" size="large" href="/human">
+                      More
+                    </Button>
+                  </Segment>
+                  <Segment basic>
+                    <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Inclusive Internet Index
                     </Header>
-                    <p style={{ fontSize: "1.33em" }}>
+                    <p style={{ fontSize: "1em" }}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -100,10 +116,10 @@ const HomepageLayout = () => {
                     <Button as="a" size="large" href="/internetIndex">
                       More
                     </Button>
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header as="h3" style={{ fontSize: "1.5em" }}>
                       FC Bayern Pulse
                     </Header>
-                    <p style={{ fontSize: "1.33em" }}>
+                    <p style={{ fontSize: "1em" }}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua.
@@ -112,10 +128,10 @@ const HomepageLayout = () => {
                     <Button as="a" size="large" href="/internetIndex">
                       More
                     </Button>
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Exporters Edge/UKEF
                     </Header>
-                    <p style={{ fontSize: "1.33em" }}>
+                    <p style={{ fontSize: "1em" }}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -126,18 +142,15 @@ const HomepageLayout = () => {
                       More
                     </Button>
 
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Chonky.Cat
                     </Header>
-                    <p style={{ fontSize: "1.33em" }}>
+                    <p style={{ fontSize: "1em" }}>
                       A near infinite source of cat pictures. Takes pictures
                       from reddit and aggregates them for a cleaner, distraction
                       free experience.
                     </p>
-                    <p>
-                      This project might stop working when Reddit updates the
-                      API terms on 1st of July
-                    </p>
+
                     <Button
                       as="a"
                       size="large"
@@ -161,10 +174,10 @@ const HomepageLayout = () => {
                     </Button>
                   </Segment>
                   <Segment basic>
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Snake game
                     </Header>
-                    <p style={{ fontSize: "1.33em" }}>
+                    <p style={{ fontSize: "1em" }}>
                       A basic Snake game written in C++. Failure states are
                       biting your own tail and running into a wall. Features a
                       eating mechaninc where after eating fruit, your snake will
@@ -184,18 +197,6 @@ const HomepageLayout = () => {
                       Github
                     </Button>
                   </Segment>
-                  <Segment basic>
-                    <Header as="h3" style={{ fontSize: "2em" }}>
-                      Human Threads
-                    </Header>
-                    <p style={{ fontSize: "1.33em" }}>
-                      A website for a Ceredigion Museum exhibition that happened
-                      during covid. The project was meant to tie together the
-                      now isolating community. It featured short films,
-                      photographs, poetry and art by dozens of members from the
-                      region.
-                    </p>
-                  </Segment>
                 </div>
 
                 <div ref={musicRef} className={styles.column}>
@@ -210,10 +211,10 @@ const HomepageLayout = () => {
                     Music Projects
                   </Divider>
                   <Segment basic>
-                    <Header as="h3" style={{ fontSize: "2em" }}>
+                    <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Unnamed EP
                     </Header>
-                    <p style={{ fontSize: "1.33em" }}>
+                    <p style={{ fontSize: "1em" }}>
                       A yet unnamed EP featuring a mix of Hard Techno, NRG and
                       Industrial. Recorded with Elektron Analog Rytm and a
                       Eurorack modular setup.
