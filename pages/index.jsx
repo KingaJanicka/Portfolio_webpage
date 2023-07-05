@@ -116,14 +116,6 @@ const HomepageLayout = () => {
                     <Button as="a" size="large" href="/internetIndex">
                       More
                     </Button>
-                    <Header as="h3" style={{ fontSize: "1.5em" }}>
-                      FC Bayern Pulse
-                    </Header>
-                    <p style={{ fontSize: "1em" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
 
                     <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Exporters Edge/UKEF
@@ -138,6 +130,14 @@ const HomepageLayout = () => {
                     <Button as="a" size="large" href="/ukef">
                       More
                     </Button>
+                    <Header as="h3" style={{ fontSize: "1.5em" }}>
+                      FC Bayern Pulse
+                    </Header>
+                    <p style={{ fontSize: "1em" }}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
 
                     <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Chonky.Cat
