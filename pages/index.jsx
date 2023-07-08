@@ -107,10 +107,8 @@ const HomepageLayout = () => {
                       Inclusive Internet Index
                     </Header>
                     <p style={{ fontSize: "1em" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      A website for Meta done with Economist Impact, it was
+                      meant to measure accessibility of internet worldwide
                     </p>
 
                     <Button as="a" size="large" href="/internetIndex">
@@ -121,23 +119,18 @@ const HomepageLayout = () => {
                       Exporters Edge/UKEF
                     </Header>
                     <p style={{ fontSize: "1em" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      A promotional site for UK Export Finance
                     </p>
 
                     <Button as="a" size="large" href="/ukef">
                       More
                     </Button>
-                    <Header as="h3" style={{ fontSize: "1.5em" }}>
+                    {/* <Header as="h3" style={{ fontSize: "1.5em" }}>
                       FC Bayern Pulse
                     </Header>
                     <p style={{ fontSize: "1em" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
+                     A website that was 
+                    </p> */}
 
                     <Header as="h3" style={{ fontSize: "1.5em" }}>
                       Chonky.Cat
