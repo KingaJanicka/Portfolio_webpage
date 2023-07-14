@@ -33,7 +33,16 @@ export default function InternetIndex() {
             <img src="/img/i3.png" style={{ height: "70vh" }} />
             <img src="/img/i3.png" style={{ height: "70vh" }} />
           </div>
-          <img src="/img/i3.png" style={{ height: "70vh", width: "auto" }} />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+              paddingBottom: "1em",
+            }}
+          >
+            <img src="/img/i3.png" style={{ height: "70vh", width: "auto" }} />
+          </div>
         </div>
       </div>{" "}
       <Segment inverted vertical style={{ padding: "5em 0em" }}>
