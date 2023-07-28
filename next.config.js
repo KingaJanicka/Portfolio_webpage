@@ -5,6 +5,7 @@ module.exports = {
         source: "/music",
         destination: "https://distrokid.com/hyperfollow/kingajanicka/current",
         permanent: false,
+        basePath: false,
       },
     ];
   },
