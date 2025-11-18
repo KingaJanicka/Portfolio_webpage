@@ -1,6 +1,8 @@
 <script lang="ts">
     import TextParagraph from "./TextParagraph.svelte";
     import { fade } from "svelte/transition";
+    import { createClientRectTracker } from "./tracker.svelte.js";
+    const clientRectTracker = createClientRectTracker();
     let showBody = $state(false);
     interface Props {
         children: Snippet;
@@ -9,19 +11,16 @@
     const { children, header }: Props = $props();
 </script>
 
-<svelte:document />
 <main>
     <div
         class="mainContainer"
         onmouseenter={() => (showBody = true)}
         onmouseleave={() => (showBody = false)}
         role="none"
+        use:clientRectTracker
     >
-        {#if showBody === false}
-            <div class="textContainer" transition:fade={{ duration: 500 }}>
-                <h2>{header}</h2>
-            </div>
-        {/if}
+        <pre>{JSON.stringify(clientRectTracker.value, null, 2)}</pre>
+        <h2>{header}</h2>
         {#if showBody === true}
             <div class="textContainer" transition:fade={{ duration: 500 }}>
                 <TextParagraph>
