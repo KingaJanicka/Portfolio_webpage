@@ -33,7 +33,7 @@
 
 <style>
   main {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
   }

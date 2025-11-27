@@ -31,7 +31,6 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        margin-bottom: 10em;
+        /* justify-content: space-between; */
     }
 </style>
