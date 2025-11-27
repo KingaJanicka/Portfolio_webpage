@@ -38,7 +38,7 @@
 
 <style>
     .mainContainer {
-        height: 100vh;
+        padding-bottom: 10em;
         text-align: left;
         scroll-snap-align: start;
     }

@@ -11,13 +11,14 @@
     const { children, header }: Props = $props();
     let innerHeight = $state(0);
     let outerHeight = $state(0);
+    let heightBreakpoint = 0.66;
 </script>
 
 <svelte:window
     bind:innerHeight
     bind:outerHeight
     onscroll={() =>
-        clientRectTracker.value?.y / innerHeight > 0.75
+        clientRectTracker.value?.y / innerHeight > heightBreakpoint
             ? (showBody = false)
             : (showBody = true)}
 />
@@ -26,7 +27,10 @@
     <div
         class="mainContainer"
         onmouseenter={() => (showBody = true)}
-        onmouseleave={() => (showBody = false)}
+        onmouseleave={() =>
+            clientRectTracker.value?.y / innerHeight < heightBreakpoint
+                ? (showBody = true)
+                : (showBody = false)}
         role="none"
         use:clientRectTracker
     >
