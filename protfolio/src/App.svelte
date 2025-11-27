@@ -13,16 +13,16 @@
       <IntroBlurb />
     </div>
 
+    <hr class="line" />
     <div class="item">
-      <hr class="line" />
       <ProjectCard />
     </div>
+    <hr class="line" />
     <div class="item">
-      <hr class="line" />
       <ProjectCard2 />
     </div>
+    <hr class="line" />
     <div class="item">
-      <hr class="line" />
       <ProjectCard3 />
     </div>
     <div class="item">
