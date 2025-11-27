@@ -40,7 +40,6 @@
     .mainContainer {
         padding-bottom: 10em;
         text-align: left;
-        scroll-snap-align: start;
     }
     .headerContainer {
         display: flex;

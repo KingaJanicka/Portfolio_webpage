@@ -11,13 +11,13 @@
     const { children, header }: Props = $props();
     let innerHeight = $state(0);
     let outerHeight = $state(0);
-    let heightBreakpoint = 0.66;
+    let heightBreakpoint = 0.75;
 </script>
 
 <svelte:window
     bind:innerHeight
     bind:outerHeight
-    onscroll={() =>
+    onwheel={() =>
         clientRectTracker.value?.y / innerHeight > heightBreakpoint
             ? (showBody = false)
             : (showBody = true)}
@@ -37,7 +37,7 @@
         <!-- <pre>{JSON.stringify(clientRectTracker.value, null, 2)}</pre> -->
         <h2>{header}</h2>
         {#if showBody === true}
-            <div class="textContainer" transition:fade={{ duration: 500 }}>
+            <div class="textContainer" transition:fade={{ duration: 750 }}>
                 <TextParagraph>
                     {@render children?.()}
                 </TextParagraph>

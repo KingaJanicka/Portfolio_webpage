@@ -1,9 +1,5 @@
 <script lang="ts">
     import type { Snippet } from "svelte";
-    interface Props {
-        children: Snippet;
-    }
-    const { children }: Props = $props();
     let date = new Date();
     let year = date.getFullYear();
 </script>

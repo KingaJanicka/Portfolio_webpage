@@ -40,7 +40,7 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        scroll-snap-align: start;
+        justify-content: space-between;
+        margin-bottom: 10em;
     }
 </style>

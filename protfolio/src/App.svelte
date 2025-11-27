@@ -8,15 +8,39 @@
 
 <svelte:window />
 <main>
-  <IntroBlurb />
-  <ProjectCard />
-  <ProjectCard2 />
-  <ProjectCard3 />
-  <Footer />
+  <article class="main">
+    <div class="item">
+      <IntroBlurb />
+    </div>
+
+    <div class="item">
+      <hr class="line" />
+      <ProjectCard />
+    </div>
+    <div class="item">
+      <hr class="line" />
+      <ProjectCard2 />
+    </div>
+    <div class="item">
+      <hr class="line" />
+      <ProjectCard3 />
+    </div>
+    <div class="item">
+      <Footer />
+    </div>
+  </article>
 </main>
 
 <style>
   main {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  .item {
+    scroll-snap-align: start;
+  }
+  .line {
+    width: 60%;
   }
 </style>
