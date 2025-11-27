@@ -11,13 +11,24 @@
 <main>
     <hr class="line" />
     <div class="mainContainer">
-        <div>
+        <div class="linkContainer">
             <h4>
                 <a
                     href="https://github.com/KingaJanicka/"
                     target="_blank"
                     class="link">Github</a
                 >
+            </h4>
+            <h4>
+                <a
+                    href="instagram.com/kingajanickaofficial/"
+                    target="_blank"
+                    class="link">Instagram</a
+                >
+            </h4>
+            <h4>
+                <!-- TODO: Pretty sure this mail does not work -->
+                <a href="mailto:kinga@kinga.dev" class="link">Mail</a>
             </h4>
         </div>
         <div>© {year} Kinga Janicka. All rights reserved.</div>
@@ -31,7 +42,11 @@
         align-items: center;
     }
     .link {
+        padding: 0em 2em;
         cursor: pointer;
+    }
+    .linkContainer {
+        display: flex;
     }
     /* .line {
         width: 100%;
