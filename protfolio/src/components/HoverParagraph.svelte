@@ -9,7 +9,18 @@
         header: string;
     }
     const { children, header }: Props = $props();
+    let innerHeight = $state(0);
+    let outerHeight = $state(0);
 </script>
+
+<svelte:window
+    bind:innerHeight
+    bind:outerHeight
+    onscroll={() =>
+        clientRectTracker.value?.y / innerHeight > 0.75
+            ? (showBody = false)
+            : (showBody = true)}
+/>
 
 <main>
     <div
@@ -19,7 +30,7 @@
         role="none"
         use:clientRectTracker
     >
-        <pre>{JSON.stringify(clientRectTracker.value, null, 2)}</pre>
+        <!-- <pre>{JSON.stringify(clientRectTracker.value, null, 2)}</pre> -->
         <h2>{header}</h2>
         {#if showBody === true}
             <div class="textContainer" transition:fade={{ duration: 500 }}>
