@@ -35,7 +35,7 @@
   main {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100vh;
+    height: 90vh;
   }
   .item {
     scroll-snap-align: start;

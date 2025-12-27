@@ -36,6 +36,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        padding-bottom: 3em;
     }
     .link {
         padding: 0.5em 2em;
