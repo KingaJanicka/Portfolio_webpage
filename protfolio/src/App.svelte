@@ -36,6 +36,10 @@
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 90vh;
+    @media (max-width: 1024px) {
+      scroll-snap-type: none;
+      overflow-y: none;
+    }
   }
   .item {
     scroll-snap-align: start;

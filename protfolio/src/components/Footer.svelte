@@ -37,6 +37,9 @@
         justify-content: space-around;
         align-items: center;
         padding-bottom: 3em;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
     }
     .link {
         padding: 0.5em 2em;

@@ -49,6 +49,9 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
     }
     .textContainer {
         flex-direction: row;

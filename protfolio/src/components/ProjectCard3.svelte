@@ -32,5 +32,8 @@
         display: flex;
         flex-direction: column;
         /* justify-content: space-between; */
+        @media (max-width: 1024px) {
+            height: 200vh;
+        }
     }
 </style>

@@ -59,6 +59,9 @@
     }
     .textContainer {
         position: absolute;
+        @media (max-width: 1024px) {
+            position: relative;
+        }
         /* top: 50%; */
         /* left: 10%; */
         /* transform: translate(-50%, -50%); */
