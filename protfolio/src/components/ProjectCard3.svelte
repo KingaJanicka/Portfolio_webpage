@@ -33,7 +33,7 @@
         flex-direction: column;
         /* justify-content: space-between; */
         @media (max-width: 1024px) {
-            height: 200vh;
+            height: 100%;
         }
     }
 </style>

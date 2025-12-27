@@ -51,6 +51,7 @@
         align-items: center;
         @media (max-width: 1024px) {
             flex-direction: column;
+            align-items: flex-start;
         }
     }
     .textContainer {

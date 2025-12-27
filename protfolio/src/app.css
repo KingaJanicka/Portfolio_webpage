@@ -29,6 +29,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  @media (max-width: 1024px) {
+    min-width: none;
+  }
 }
 
 h1 {
@@ -42,6 +45,9 @@ h1 {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+        @media (max-width: 1024px) {
+            padding: 1rem
+        }
 }
 
 button {

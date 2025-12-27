@@ -42,7 +42,7 @@
                     {@render children?.()}
                 </TextParagraph>
             </div>
-        {/if}
+        {:else}<div class="paddingDiv"></div>{/if}
     </div>
 </main>
 
@@ -60,10 +60,19 @@
     .textContainer {
         position: absolute;
         @media (max-width: 1024px) {
+            height: 100%;
             position: relative;
         }
         /* top: 50%; */
         /* left: 10%; */
         /* transform: translate(-50%, -50%); */
+    }
+    .paddingDiv {
+        @media (max-width: 1024px) {
+            height: 10em;
+        }
+        @media (max-width: 420px) {
+            height: 15em;
+        }
     }
 </style>

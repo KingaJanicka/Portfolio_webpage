@@ -44,6 +44,9 @@
     .link {
         padding: 0.5em 2em;
         cursor: pointer;
+        @media (max-width: 1024px) {
+            padding: 0.5em 1em;
+        }
     }
     .linkContainer {
         display: flex;

@@ -17,5 +17,8 @@
 <style>
     p {
         text-align: left;
+        @media (max-width: 1024px) {
+            width: 90vw;
+        }
     }
 </style>
