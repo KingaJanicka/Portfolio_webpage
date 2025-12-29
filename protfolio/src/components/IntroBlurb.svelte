@@ -18,14 +18,14 @@
                     performing live music or creating visual art
                 </TextParagraph>
                 <TextParagraph
-                    >Projects I've worked on include: <br />
+                    ><b>Projects I've worked on include:</b> <br />
                     Pushpin: an open-source musical groovebox <br />
                     vis.kinga.dev: a VJing tool meant to emulate old feedback-based
                     workflows <br />
                     Various projects for Meta, UK Gov, Siemens
                 </TextParagraph>
                 <TextParagraph
-                    >My skills include:
+                    ><b>My skills include:</b>
                     <div class="grid">
                         <div>JavaScript (ES2022)</div>
                         <div>Typescript</div>
