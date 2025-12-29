@@ -33,7 +33,7 @@
                         <div>React</div>
                         <div>Svelte</div>
                         <div>NextJS</div>
-                        <div>NextJS</div>
+                        <div>p5js</div>
                         <div>CSS</div>
                         <div>Sass</div>
                         <div>HTML5</div>
@@ -44,6 +44,7 @@
                         <div>Daisy Seed</div>
                         <div>MaxMSP</div>
                         <div>PureData</div>
+                        <div>touchDesigner</div>
                         <div>Google Workspaces</div>
                     </div></TextParagraph
                 >
