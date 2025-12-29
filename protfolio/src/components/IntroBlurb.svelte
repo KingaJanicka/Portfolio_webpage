@@ -13,18 +13,40 @@
                     Hello my name is Kinga Janicka. I am a self-taught
                     web-developer, musician, technologist and I love expressing
                     myself though tech. I am an artist with an established
-                    creative practise, and so all my projects are deeply rooted
-                    and intertwined with my other creative pursiuts such as
+                    creative practice, and so all my projects are deeply rooted
+                    and intertwined with my other creative pursuits such as
                     performing live music or creating visual art
                 </TextParagraph>
                 <TextParagraph
                     >Projects I've worked on include: <br />
                     Pushpin: an open-source musical groovebox <br />
-                    vis.kinga.dev: a VJing tool meant to emulate old feedback based
+                    vis.kinga.dev: a VJing tool meant to emulate old feedback-based
                     workflows <br />
                     Various projects for Meta, UK Gov, Siemens
                 </TextParagraph>
-                <TextParagraph>Scroll down to find out more</TextParagraph>
+                <TextParagraph
+                    >My skills include:
+                    <div class="grid">
+                        <div>JavaScript (ES2022)</div>
+                        <div>Typescript</div>
+                        <div>Python</div>
+                        <div>React</div>
+                        <div>Svelte</div>
+                        <div>NextJS</div>
+                        <div>NextJS</div>
+                        <div>CSS</div>
+                        <div>Sass</div>
+                        <div>HTML5</div>
+                        <div>SVG</div>
+                        <div>Rust</div>
+                        <div>C++</div>
+                        <div>JUCE</div>
+                        <div>Daisy Seed</div>
+                        <div>MaxMSP</div>
+                        <div>PureData</div>
+                        <div>Google Workspaces</div>
+                    </div></TextParagraph
+                >
             </div>
             <div>
                 <img
@@ -52,6 +74,15 @@
         @media (max-width: 1024px) {
             flex-direction: column;
             align-items: flex-start;
+        }
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 0.5em;
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr 1fr;
         }
     }
     .textContainer {

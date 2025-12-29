@@ -51,7 +51,6 @@
         padding: 1em 0em;
         position: relative;
         min-height: 15vh;
-        width: 90vw;
     }
     h2 {
         margin: 0;

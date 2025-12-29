@@ -3,7 +3,7 @@
 </script>
 
 <div class="mainContainer">
-    <HoverParagraph header="The Traning Montage">
+    <HoverParagraph header="The Training Montage">
         This should be a page about why I started to code. Some of my own first
         projects, languages etc
     </HoverParagraph>
