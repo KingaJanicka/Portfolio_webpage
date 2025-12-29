@@ -11,7 +11,7 @@
     const { children, header }: Props = $props();
     let innerHeight = $state(0);
     let outerHeight = $state(0);
-    let heightBreakpoint = 0.75;
+    let heightBreakpoint = 1;
 </script>
 
 <svelte:window
@@ -48,7 +48,7 @@
 
 <style>
     .mainContainer {
-        padding: 1em 0em;
+        padding: 1em 0em 0em 0em;
         position: relative;
         min-height: 15vh;
     }
@@ -57,14 +57,9 @@
         text-align: left;
     }
     .textContainer {
-        position: absolute;
         @media (max-width: 1024px) {
             height: 100%;
-            position: relative;
         }
-        /* top: 50%; */
-        /* left: 10%; */
-        /* transform: translate(-50%, -50%); */
     }
     .paddingDiv {
         @media (max-width: 1024px) {
