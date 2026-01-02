@@ -27,9 +27,8 @@
         people that couldn't make the physical exhibition due to distance or a need
         to isolate. To this day, it's my favorite project that I've worked on.</HoverParagraph
     >
-    <HoverParagraph header="Inclusive Internet Index">
-        First of the so far mentioned projects that's still accessible! <br
-        />The Inclusive Internet Index was a project for The Economist
+    <HoverParagraph header="Inclusive Internet Index"
+        >The Inclusive Internet Index was a project for The Economist
         Intelligence Unit, sponsored by Meta and developed in conjunction with
         Signal Noise. We were tasked with implementing a beautiful piece of data
         visualization depicted how accessible internet access is in various
