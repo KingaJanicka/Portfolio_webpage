@@ -1,5 +1,6 @@
 <script lang="ts">
     import TextParagraph from "./TextParagraph.svelte";
+    import avatar from "../assets/avatar.jpg";
 </script>
 
 <div class="mainContainer">
@@ -11,11 +12,11 @@
                 <h4>Creative Technologist</h4>
                 <TextParagraph>
                     Hello my name is Kinga Janicka. I am a self-taught
-                    web-developer, musician, technologist and I love expressing
-                    myself though tech. I am an artist with an established
-                    creative practice, and so all my projects are deeply rooted
-                    and intertwined with my other creative pursuits such as
-                    performing live music or creating visual art
+                    web-developer, musician, technologist, and I love expressing
+                    myself using technology. I am an artist with an established
+                    creative practice, and all my projects are deeply rooted and
+                    intertwined with my other creative pursuits such as
+                    performing live music or creating visual art.
                 </TextParagraph>
                 <TextParagraph
                     ><b>Projects I've worked on include:</b> <br />
@@ -50,10 +51,7 @@
                 >
             </div>
             <div>
-                <img
-                    src="https://static.wikia.nocookie.net/silly-cat/images/e/ea/Gnapy.png/revision/latest?cb=20231005190830"
-                    alt="Image of a silly cat"
-                />
+                <img src={avatar} alt="" />
             </div>
         </div>
     </div>
@@ -61,8 +59,19 @@
 
 <style>
     .mainContainer {
-        padding-bottom: 10em;
         text-align: left;
+        height: 100vh;
+        @media (max-width: 1024px) {
+            height: 100%;
+            padding-bottom: 5em;
+        }
+    }
+    img {
+        padding: 2em;
+        width: 30vw;
+        @media (max-width: 1024px) {
+            width: 75vw;
+        }
     }
     .headerContainer {
         display: flex;
@@ -73,7 +82,7 @@
         flex-direction: row;
         align-items: center;
         @media (max-width: 1024px) {
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: flex-start;
         }
     }

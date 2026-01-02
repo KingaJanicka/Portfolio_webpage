@@ -2,7 +2,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: large;
+  font-size: 0.95em;
 
   color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
@@ -43,7 +43,7 @@ h1 {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 3rem 0 2rem;
   text-align: center;
         @media (max-width: 1024px) {
             padding: 1rem

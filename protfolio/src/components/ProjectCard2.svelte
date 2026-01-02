@@ -5,41 +5,47 @@
 
 <div class="mainContainer">
     <HoverParagraph header="The Contracting Era">
-        At this point it was around covid and I was ready to do some paid work
-        as a webdeveloper. Me and my partner made a webedv agency and started
-        looking. Lucky for us that time was the absoule boom for such work.
-        <br /><br />The idea of making my own synth still sat there itching my
-        brain.
+        Starting in 2020, I felt I was ready to do some paid work as a web
+        developer. My partner and I founded an agency and started looking for
+        contracts. Luckily for us, work was booming.
+        <br />Although I enjoyed web development work, the idea of making my own
+        synth still sat there, itching my brain.
     </HoverParagraph>
     <HoverParagraph header="Human Threads"
-        >The first project we took on was Human Threads. Since down, it was a
-        virtual museum exhibition of art from a area in Wales. Goal was to
-        connect the then isolating community. The exhibtion itself was physical
-        with artists trying to make sense out of the situation and connect with
-        their freinds.
+        >The first project we took on was called <a
+            href="https://www.crewstudio.co/work/human-threads/"
+            >"Human Threads"</a
+        >, which was a virtual exhibition in conjunction with the Ceredigion
+        Museum in Wales that intended to connect the then-isolating community.
+        The exhibition itself was physical with artists trying to make sense out
+        of the situation and connect with their friends, though there was also
+        an extensive online gallery. Designs were provided by Crew Studio and we
+        did most of the development work.
         <br />
         <br />
         As this was during covid our agency was tasked with making a website for
         people that couldn't make the physical exhibition due to distance or a need
-        to isolate. To this day this is the favorite project I've worked on</HoverParagraph
+        to isolate. To this day, it's my favorite project that I've worked on.</HoverParagraph
     >
     <HoverParagraph header="Inclusive Internet Index">
         First of the so far mentioned projects that's still accessible! <br
-        />This is a website for the economist that we've worked on. A beautiful
-        piece of data visualization that aimed to show how accessible and
-        incluside internet is in various parts of the world.
-        <br /> As so much of our lives right now are heavily tied to being able to
-        access internet be it for work, leisure or even being able to find what social
-        events are happening in the vicinty those metrics are an important view into
-        how this almost essential service can be accessed and how people in different
-        countries might live in it's absence.
+        />The Inclusive Internet Index was a project for The Economist
+        Intelligence Unit, sponsored by Meta and developed in conjunction with
+        Signal Noise. We were tasked with implementing a beautiful piece of data
+        visualization depicted how accessible internet access is in various
+        parts of the world.
+        <br />I enjoyed working on it as so much of our lives right now are
+        heavily tied to being able to access the internet — be it for work,
+        leisure or even being able to find nearby social events.
     </HoverParagraph>
     <HoverParagraph header="Exporters Edge/UKEF">
-        This was a project again for the economist. Made right before brexit it
-        aimed to explain the new import and export rules that will be in place.
+        "Export's Edge" was another project for The Economist Intelligence Unit
+        in conjunction with Signal Noise. Commissioned by UKEF, the UK
+        government's export finance agency, it sought to explain the new rules
+        coming into effect as a result of Brexit.
         <br />
-        This while simpler than previous projects still offered new challanges in
-        it's extensive use of SVG graphics.
+        While simpler than previous projects, it still offered new challanges in
+        its extensive use of SVG graphics.
     </HoverParagraph>
 </div>
 
@@ -51,6 +57,7 @@
         /* justify-content: space-between; */
         @media (max-width: 1024px) {
             height: 100%;
+            padding-bottom: 5em;
         }
     }
 </style>
