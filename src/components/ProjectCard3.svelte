@@ -26,9 +26,11 @@
     <HoverParagraph header="Pushpin">
         Annoyed that nothing was working quite like I wanted it to and not
         wanting to limit my musical expression to tools available, I started
-        making my own open-source groovebox. It's an extensive codebase that
-        utilises all of my past experience and leverages several open-source
-        projects.
+        making <a href="https://pushpin.kinga.dev"
+            >my own open-source groovebox.</a
+        >
+        It's an extensive codebase that utilises all of my past experience and leverages
+        several open-source projects.
         <br />Pushpin is designed from the ground up to be infinitely hackable,
         letting artists customise it to their own needs. It's written in Python,
         with a lot of the menus configured using simple JSON files.
