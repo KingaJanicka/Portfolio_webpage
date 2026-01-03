@@ -17,7 +17,7 @@
             </h4>
             <h4>
                 <a
-                    href="instagram.com/kingajanickaofficial/"
+                    href="https://instagram.com/kingajanickaofficial/"
                     target="_blank"
                     class="link">Instagram</a
                 >
